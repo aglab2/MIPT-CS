@@ -1,0 +1,5 @@
+"xor %rbx, %rbx\n"
+"Cycle: add (%rax), %rbx\n"
+"add $8, %rax\n"
+"dec %rcx\n"
+"jne Cycle\n"

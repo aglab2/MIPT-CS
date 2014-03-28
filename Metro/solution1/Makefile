@@ -1,0 +1,8 @@
+all:
+	nasm -felf  library.asm
+	ar cr liblibrary.a library.o
+	ranlib liblibrary.a
+
+clean:
+	rm -r *.o
+	rm -r *.a

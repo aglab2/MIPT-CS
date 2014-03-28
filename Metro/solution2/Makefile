@@ -1,0 +1,5 @@
+all:
+	nasm -felf source.asm
+	gcc -m32 -o solution source.o
+clean:
+	rm -f *.o

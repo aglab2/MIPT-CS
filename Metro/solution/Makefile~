@@ -1,0 +1,10 @@
+all:
+	liblibrary.so
+
+liblibrary.so:
+	nasm -felf  library.asm
+	gcc -shared -m32 -o liblibrary.so library.o
+
+clean:
+	rm -r *.o
+	rm -r *.a
